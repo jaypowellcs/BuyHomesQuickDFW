@@ -47,22 +47,22 @@
             </div>
             <div class="col-m-5">
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cashOffer">
-                Launch demo modal
+                Get cash offer
               </button>
           </div>
         </div>
     </div>
 </div>
 
-<!-- Modal -->
+<!-- Modal for Cash Offers -->
 <div class="modal fade" id="cashOffer" tabindex="-1" role="dialog" aria-labelledby="cashOffer" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Let us make you an offer</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <h5 class="modal-title" id="titleCashOffer">Let us make you an offer</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
       </div>
       <div class="modal-body">
         <form>
@@ -75,10 +75,26 @@
               <label for="inputLastName">Last Name</label>
               <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
             </div>
-      </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-8">
+              <label for="inputEmail">Email address</label>
+              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter Email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>  
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-8">
+              <label for="inputTel">Telephone</label>
+              <input type="tel" class="form-control" id="inputPhone" aria-describedby="telephoneHelp" placeholder="Enter Telephone">
+              <small>Format: 123-456-7890</small>
+            </div>  
+          </div>
+        </form>
+</div>
 
 
-      
+
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Submit</button>
