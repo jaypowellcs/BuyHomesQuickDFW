@@ -7,7 +7,7 @@
      <!-- Required meta tags always come first -->
      <meta charset="utf-8" />
      <meta name="viewport" content="width=device-width, initial-scale=1" />
- 
+     <link rel="stylesheet" href="css/styles.css">
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
@@ -46,7 +46,7 @@
                 </ul>
             </div>
             <div class="col-m-5">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cashOffer">
+              <button id="cashOffer" type="button" class="btn btn-primary" data-toggle="modal" data-target="#cashOffer1">
                 Get cash offer
               </button>
           </div>
@@ -55,7 +55,7 @@
 </div>
 
 <!-- Modal for Cash Offers -->
-<div class="modal fade" id="cashOffer" tabindex="-1" role="dialog" aria-labelledby="cashOffer" aria-hidden="true">
+<div class="modal fade" id="cashOffer1" tabindex="-1" role="dialog" aria-labelledby="cashOffer" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -196,7 +196,57 @@
     </div>
   </div>
 </div>
-  
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <br>
+      
+      <br>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h3 class="text-center">How it works</h3>
+    </div>
+    <div class="card-group">
+      <div class="card">
+        <img class="card-img-top" src="images/filloutform.png" alt="Icon of filling out the form">
+        <div class="card-body">
+          <h5 class="card-title">Fill out the form</h5>
+          <p class="card-text">Fill out the form on this page with your contact information, and we will contact you within 24 hours</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="images/houseinspection.png" alt="Icon of house inspection">
+        <div class="card-body">
+          <h5 class="card-title">Home Inspection</h5>
+          <p class="card-text">We will schedule a home inspection to identify the problems with your home and write up an offer.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="images/cashoffer.png" alt="Icon of cash offer">
+        <div class="card-body">
+          <h5 class="card-title">Cash offer</h5>
+          <p class="card-text">After inspection, our team will write you up an offer that you can accept for an all cash offer</p>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <br>
+      <br>
+    </div>
+  </div>
+</div>
+
 <div class="container">
   <div class="row">
     <div class="col text-center">
@@ -221,6 +271,15 @@
         <p class="mb-0">Easiest way to sell a home. It's very straight forward. They come out to screen the house and tell you how works. You sign the necessary paperwork. They come out and do a thorough inspection</p>
       <footer class="blockquote-footer">Alex Rios <cite title="city">Dallas, Texas</cite></footer>
     </blockquote>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <br>
+      <br>
     </div>
   </div>
 </div>
@@ -257,7 +316,17 @@
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> 
+    <script>
+      $(window).scroll(function() {
+        var winScrollTop = $(window).scrollTop();
+        var winHeight = $(window).height();
+        var floaterHeight = $('#cashOffer').outerHeight(true);
+        var fromBottom = 400;
+        var top = winScrollTop + winHeight - floaterHeight - fromBottom;
+      $('#cashOffer').css({'top': top + 'px'});
+      });
+  </script>
 </body>
 </html>
 
