@@ -1,6 +1,6 @@
-header {
-    background-image: url("../images/blackandyellowhouses.png");
-    background-size: 100% 150%;
+#offerForm {
+    background-image: url("../images/main.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
   }
 

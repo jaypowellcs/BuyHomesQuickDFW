@@ -10,6 +10,9 @@
      <link rel="stylesheet" href="css/styles.css">
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+     
+     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <title>Buy Homes Quick DFW</title>
 </head>
 
@@ -17,8 +20,30 @@
 <header class="jumbotron jumbotron-fluid">
   <div class="container">
     <div class="row">
-      <div class="col-m-10">
-          <h1>Buy Homes Quick DFW</h1>
+      <div class="col-m-4">
+        <img src="images/righthome.jpg" class="rounded float-left" alt="Responsive image">
+      </div>
+        <div class="col-m-4">
+          <nav>
+            <ul class="nav nav-pills nav-expand-sm bg-dark ">
+              <li class="nav-item">
+              <a class="nav-link active" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link disabled" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-m-4">
+          <button type="button" class="btn btn-primary btn-lg"><i class="fa-solid fa-phone-volume"></i>123-345-5232</button>
+        </div>
       </div>
     </div>
   </div>
@@ -128,7 +153,7 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container text-center" >
   <div class="row">
     <div class="col-sm">
         <h2>Let us give you an offer</h2>
@@ -137,55 +162,57 @@
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
+<div class="container py-5" id="offerForm">
+  <div class="row offset-md-2">
     <div class="col-sm">
       <form>
-          <div class="form-row">
-            <div class="form-group col-md-4">
-              <label for="inputFirstName">First Name</label>
-              <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
-            </div>
-            <div class="form-group col-md-4">
-              <label for="inputLastName">Last Name</label>
-              <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
-            </div>
-            <div class="form-group col-md-8">
-              <label for="inputAddress">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
+        <div class="form-row">
+          <div class="form-group col-md-5">
+            <label for="inputFirstName">First Name</label>
+            <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-2">
-              <label for="inputCity">City</label>
-              <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="form-group col-md-2">
-              <label for="inputState">State</label>
-                <select id="inputState" class="form-control">
-                  <option selected>Choose...</option>
-                  <option>TX</option>
-                </select>
-            </div>
-            <div class="form-group col-md-2">
-              <label for="inputZip">Zip</label>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
+          <div class="form-group col-md-5">
+            <label for="inputLastName">Last Name</label>
+            <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-4">
-              <label for="inputEmail">Email address</label>
-              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter Email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>  
-            <div class="form-group col-md-4">
-              <label for="inputTel">Telephone</label>
-              <input type="tel" class="form-control" id="inputPhone" aria-describedby="telephoneHelp" placeholder="Enter Telephone">
-              <small>Format: 123-456-7890</small>
-            </div>  
+          <div class="form-group col-md-10">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
           </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-3">
+            <label for="inputState">State</label>
+              <select id="inputState" class="form-control">
+                <option selected>Choose...</option>
+                <option>TX</option>
+              </select>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-5">
+            <label for="inputEmail">Email address</label>
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter Email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>  
+          <div class="form-group col-md-5">
+            <label for="inputTel">Telephone</label>
+            <input type="tel" class="form-control" id="inputPhone" aria-describedby="telephoneHelp" placeholder="Enter Telephone">
+            <small>Format: 123-456-7890</small>
+          </div>  
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary text-right">Submit</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
@@ -193,12 +220,12 @@
 <div class="container">
   <div class="row">
     <div class="col-sm">
-      <h2 class="text-center">Main Features/Benefits</h2>
+      <h2 class="text-center py-4">Main Features/Benefits</h2>
     </div>
   </div>
   <div class="row">
     <div class="col-sm">
-      <div class="card border-primary mb-3" style="width: 18rem;">
+      <div class="card border-primary mb-3 offset-md-4" style="width: 18rem;">
         <div class="card-header">
           <h5 class="text-center">Selling to us</h5>
         </div>
@@ -229,23 +256,13 @@
 </div>
 </div>
 
-
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <br>
-      <br>
-    </div>
-  </div>
-</div>
-
-<div class="container">
+<div class="container py-5">
   <div class="row">
     <div class="col text-center">
       <h2>Reviews/Testionmals</h2>
     </div>
   </div>
-  <div class="row">
+  <div class="row align-items-center">
     <div class="col-sm">
       <blockquote class="blockquote text-center">
         <p class="mb-0">Pretty straightforward with the process and very fair with the offer. The no contingency aspect is great too. Representatives are also caring and understanding to seller's needs. Stay after closing for free is another good thing. Nothing is perfect but it all came out good. Will recommend to friends. Thanks for taking care of the deal.</p>
