@@ -20,3 +20,24 @@
     text-align: center;
     box-sizing: border-box;
 }
+
+.jumbotron {
+  padding: 30px;
+  background-image: linear-gradient(silver, white);
+  color: white;
+  margin: 0; 
+}
+
+.site-footer {
+  background-image: linear-gradient(white, silver);
+  padding: 20px 0;
+}
+
+.container {
+  padding: 5px 0;
+  
+}
+
+.row {
+  padding: 5px 0;
+}
