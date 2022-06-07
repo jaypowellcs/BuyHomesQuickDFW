@@ -2,10 +2,8 @@
 <br></br>
 <h2>Website for cash offer website</h2>
 <p>Website I built with Bootstrap, Jquery, and Html</p>
-<br></br>
 <h3>Description</h3>
 <p>Website that is designed for a company to use to help users input their information into the website so that the company can hopefully buy their properties from them.</p> 
-<br></br>
 <h3>Cool Features</h3>
 <p>Boostrap, SCSS, and Jquery</p>
 <h3>Things I learned</h3>
