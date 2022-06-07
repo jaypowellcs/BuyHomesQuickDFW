@@ -3,7 +3,6 @@
 
 
 <h2>Website for cash offer website</h2>
-<br></br>
 <p>Website built with Bootstrap, Jquery, and Htm</p>
 <br></br>
 <h3>Description</h3>
