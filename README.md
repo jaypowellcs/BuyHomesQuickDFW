@@ -10,10 +10,8 @@
 <p>Website that is designed for a company to use to help users input their information into the website so that the company can hopefully buy their properties from them.</p> 
 <br></br>
 <h3>Cool Features</h3>
-<br></br>
 <p>Learened on how to implement Bootstrap into a project. Also, on how to incorporate Jquery into a proeject.</p>
 <h3>Things I learned</h3>
-<br></br>
 <p>Learened on how to implement Bootstrap into a project. Also, on how to incorporate Jquery into a proeject. Also, learned a lot about design and placement. If I had more time for the project I think I would of made it more streamlined. A problem that I discovered was trying to make the website too busy. Simple is better</p>
 <br></br>
 
